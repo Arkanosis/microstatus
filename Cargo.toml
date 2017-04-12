@@ -1,0 +1,16 @@
+[package]
+name = "microstatus"
+version = "0.0.1"
+description = "Lightweight Mastodon- and GNU social-compatible OStatus server implementation"
+
+authors = ["Jérémie Roquet <jroquet@arkanosis.net>"]
+
+documentation = "https://github.com/Arkanosis/microstatus"
+homepage = "https://github.com/Arkanosis/microstatus"
+repository = "https://github.com/Arkanosis/microstatus"
+
+readme = "README.md"
+license = "ISC"
+
+keywords = ["microblog", "ostatus", "mastodon", "gnu-social", "social-network"]
+categories = ["command-line-utilities"]
