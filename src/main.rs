@@ -45,7 +45,7 @@ fn main() {
     if args.flag_version {
         println!("microstatus v{}", option_env!("CARGO_PKG_VERSION").unwrap_or("unknown"));
     } else {
-        let directory: &std::path::Path = std::path::Path::new(&args.arg_working_directory);
+        let directory = std::path::Path::new(&args.arg_working_directory);
         if directory.exists() {
             if !directory.is_dir() {
                 error!(logger, "Working directory path \"{}\" does not actually target a directory", args.arg_working_directory);
