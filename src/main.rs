@@ -1,4 +1,5 @@
 extern crate docopt;
+extern crate microstatus;
 extern crate rustc_serialize;
 #[macro_use]
 extern crate slog;
@@ -43,22 +44,12 @@ fn main() {
             );
 
     if args.flag_version {
-        println!("microstatus v{}", option_env!("CARGO_PKG_VERSION").unwrap_or("unknown"));
+        println!("microstatus v{}", microstatus::version());
     } else {
-        let directory = std::path::Path::new(&args.arg_working_directory);
-        if directory.exists() {
-            if !directory.is_dir() {
-                error!(logger, "Working directory path \"{}\" does not actually target a directory", args.arg_working_directory);
-                drop(logger);
-                std::process::exit(1);
-            }
-        } else {
-            info!(logger, "Creating working directory at \"{}\"", args.arg_working_directory);
-            if !std::fs::create_dir(&args.arg_working_directory).is_ok() {
-                error!(logger, "Unable to create directory \"{}\"", args.arg_working_directory);
-                drop(logger);
-                std::process::exit(1);
-            }
+        let exit_code = microstatus::run(&args.arg_working_directory, &logger);
+        if exit_code != 0 {
+            drop(logger);
+            std::process::exit(exit_code)
         }
     }
 }
