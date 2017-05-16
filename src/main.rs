@@ -14,7 +14,7 @@ Usage: microstatus <working-directory>
        microstatus --version
 
 Arguments:
-    working_directory working directory (file storage)
+    working-directory working directory (file storage)
 
 Options:
     -h, --help  Show this screen.
