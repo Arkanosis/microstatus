@@ -7,7 +7,7 @@ extern crate slog_term;
 
 use slog::Drain;
 
-const USAGE: &'static str = "
+const USAGE: &str = "
 Usage: microstatus <working-directory>
        microstatus -h | --help
        microstatus --version
