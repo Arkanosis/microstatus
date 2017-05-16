@@ -27,7 +27,18 @@ Copy the `microstatus` binary wherever you want.
 
 ## Usage
 
-Run `microstatus <path to the microstatus data directory>`.
+```console
+Usage: microstatus <working-directory>
+       microstatus -h | --help
+       microstatus --version
+
+Arguments:
+    working_directory working directory (file storage)
+
+Options:
+    -h, --help  Show this screen.
+    --version   Show version.
+```
 
 ## Contributing and reporting bugs
 
