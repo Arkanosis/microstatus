@@ -1,18 +1,22 @@
 # microstatus [![](https://img.shields.io/crates/v/microstatus.svg)](https://crates.io/crates/microstatus) [![License](http://img.shields.io/badge/license-ISC-blue.svg)](/LICENSE) [![Build status](https://travis-ci.org/Arkanosis/microstatus.svg?branch=master)](https://travis-ci.org/Arkanosis/microstatus)
 
-**microstatus** is a lightweight [Mastodon](https://github.com/tootsuite/mastodon)- and [GNU social](https://gnu.io/social/)-compatible [OStatus](https://www.w3.org/community/ostatus/) server implementation.
+**microstatus** is a lightweight [Mastodon](https://github.com/tootsuite/mastodon)- and [GNU social](https://gnu.io/social/)-compatible [OStatus](https://www.w3.org/community/ostatus/) and [ActivityPub](https://www.w3.org/TR/activitypub/) server implementation.
+
+## Current Status
+
+microstatus is still under active design and not yet ready for mainstream usage.
 
 ## Design goals
 
 microstatus aims at the following objectives:
-* provide a complete, standard compliant implementation of the OStatus protocol;
+* provide a complete, standard compliant implementation of the OStatus and ActivityPub protocols;
 * be extremely lightweight, self-contained and easy to deploy;
 * federate with Mastodon and GNU social instances (at least);
 * use a hackable, UNIX-friendly storage format;
 * come with a nice client API.
 
 microstatus (nice to have) non-goals include:
-* providing a *scalable* implementation of the OStatus protocol;
+* providing a *scalable* implementation of the OStatus and ActivityPub protocols;
 * handling billions of users;
 * being compatible with Mastodon's, GNU social's or Twitter's *client* API;
 * coming with a nice web or mobile UI.
