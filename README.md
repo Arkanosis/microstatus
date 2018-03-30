@@ -52,4 +52,4 @@ Please report bugs and feature requests on [GitHub issues](https://github.com/Ar
 
 ## License
 
-microstatus is copyright (C) 2017 Jérémie Roquet <jroquet@arkanosis.net> and licensed under the ISC license.
+microstatus is copyright (C) 2017-2018 Jérémie Roquet <jroquet@arkanosis.net> and licensed under the ISC license.
