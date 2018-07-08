@@ -1,4 +1,4 @@
-# microstatus [![](https://img.shields.io/crates/v/microstatus.svg)](https://crates.io/crates/microstatus) [![License](http://img.shields.io/badge/license-ISC-blue.svg)](/LICENSE) [![Build status](https://travis-ci.org/Arkanosis/microstatus.svg?branch=master)](https://travis-ci.org/Arkanosis/microstatus)
+# microstatus [![](https://img.shields.io/crates/v/microstatus.svg)](https://crates.io/crates/microstatus) [![License](https://img.shields.io/badge/license-ISC-blue.svg)](/LICENSE) [![Build status](https://travis-ci.org/Arkanosis/microstatus.svg?branch=master)](https://travis-ci.org/Arkanosis/microstatus)
 
 **microstatus** is a lightweight [Mastodon](https://github.com/tootsuite/mastodon)- and [GNU social](https://gnu.io/social/)-compatible [OStatus](https://www.w3.org/community/ostatus/) and [ActivityPub](https://www.w3.org/TR/activitypub/) server implementation.
 
