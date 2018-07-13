@@ -31,7 +31,7 @@ Copy the `microstatus` binary wherever you want.
 
 ## Usage
 
-```console
+```
 Usage: microstatus <working-directory>
        microstatus -h | --help
        microstatus --version
