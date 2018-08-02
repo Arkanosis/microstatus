@@ -1,6 +1,7 @@
 extern crate docopt;
 extern crate microstatus;
-extern crate rustc_serialize;
+#[macro_use]
+extern crate serde_derive;
 #[macro_use]
 extern crate slog;
 extern crate slog_async;
@@ -21,7 +22,7 @@ Options:
     --version   Show version.
 ";
 
-#[derive(RustcDecodable)]
+#[derive(Deserialize)]
 struct Args {
     arg_working_directory: String,
     flag_version: bool,
@@ -37,7 +38,7 @@ fn main() {
         docopt::Docopt::new(USAGE)
             .and_then(|docopts|
                 docopts.argv(std::env::args().into_iter())
-                   .decode()
+                   .deserialize()
             )
             .unwrap_or_else(|error|
                 error.exit()
