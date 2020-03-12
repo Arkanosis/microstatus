@@ -1,13 +1,9 @@
-extern crate docopt;
-extern crate microstatus;
-#[macro_use]
-extern crate serde_derive;
-#[macro_use]
-extern crate slog;
-extern crate slog_async;
-extern crate slog_term;
+use serde_derive::Deserialize;
 
-use slog::Drain;
+use slog::{
+    Drain,
+    o,
+};
 
 const USAGE: &str = "
 Usage: microstatus <working-directory>
