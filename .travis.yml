@@ -1,5 +1,5 @@
 language: rust
-rust: 1.48.0
+rust: 1.49.0
 
 notifications:
   email: jroquet@arkanosis.net
