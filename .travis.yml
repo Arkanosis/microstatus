@@ -3,4 +3,4 @@ rust: 1.51.0
 
 notifications:
   email: jroquet@arkanosis.net
-  irc: "ircs://chat.freenode.net:6697/#microstatus"
+  irc: "ircs://irc.libera.chat:6697/#microstatus"
