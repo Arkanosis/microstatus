@@ -6,6 +6,11 @@
 
 microstatus is still under active design and not yet ready for mainstream usage.
 
+If you need something that's mostly usable *today* and can't wait for microstatus to be ready, have a look at [GoToSocial](https://docs.gotosocial.org/):
+* while still alpha software, it's already deployable and usable;
+* it's very lightweight, self-contained and easy to deploy;
+* it federates with Mastodon.
+
 ## Design goals
 
 microstatus aims at the following objectives:
@@ -52,4 +57,4 @@ Please report bugs and feature requests on [GitHub issues](https://github.com/Ar
 
 ## License
 
-microstatus is copyright (C) 2017-2018 Jérémie Roquet <jroquet@arkanosis.net> and licensed under the ISC license.
+microstatus is copyright (C) 2017-2022 Jérémie Roquet <jroquet@arkanosis.net> and licensed under the ISC license.
